@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>OpenBoard</title>
+</head>
+<body>
+    <div class="options-cont">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+       <img class="pencil" src="https://cdn-icons-png.flaticon.com/512/94/94234.png" alt="pencil">
+       <img class="eraser" src="https://cdn-icons-png.flaticon.com/512/1042/1042469.png" alt="eraser">
+       <img class="download" src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="download">
+       <img class="upload" src="https://cdn-icons-png.flaticon.com/512/126/126477.png" alt="upload">
+       <img class="sticky" src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="sticky note">
+       <img class="redo" src="https://cdn-icons-png.flaticon.com/512/1828/1828040.png" alt="redo">
+       <img class="undo" src="https://cdn-icons-png.flaticon.com/512/60/60690.png" alt="undo">
+
+    </div>
+
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input type="range" name="" id="" min="2" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-cont">
+             <div class=" black pencil-color "></div>
+             <div class=" red pencil-color"></div>
+             <div class=" blue pencil-color "></div>
+        </div>
+    </div>
+    <div class="eraser-tool-cont">
+        <input type="range" name="" id="" min="2" max="10" value="3" class="eraser-width">
+    </div>
+
+    <!-- html element it is provided by API(Browser) -->
+    <canvas></canvas>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous">
+    </script>
+    <script>
+        let socket=io.connect("http://localhost:5000");
+    </script>
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Openboard_Clone</title>
+</head>
+<body>
+    <div class="options-cont">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+        <img class="pencil" src="Icons/Pencil.svg">
+        <img class="eraser" src="Icons/Eraser.svg">
+        <img class="download" src="Icons/Download.svg">
+        <img class="upload" src="Icons/Upload.svg">
+        <img class="sticky" src="Icons/StickyNote.svg">
+        <img class="redo" src="Icons/Redo.svg">
+        <img class="undo" src="Icons/Undo.svg">
+    </div>
+
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input type="range" min="2" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+    <div class="eraser-tool-cont">
+        <input type="range" min="2" max="10" value="3" class="eraser-width">
+    </div>
+
+    <canvas></canvas>
+    <script src="https://cdn.socket.io/4.2.0/socket.io.min.js" integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.7.1/build/cjs/index.min.js" crossorigin="anonymous"></script>
+    <script>
+        let socket=io.connect("http://localhost:5000");
+    </script>
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html> -->
