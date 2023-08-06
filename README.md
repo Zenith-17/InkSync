@@ -1,6 +1,6 @@
 ## Features
 
-The real-time whiteboard provides the following key features:
+InkSync is a real-time whiteboard which provides the following key features:
 
 ### Drawing:
 - Use a pencil with three different colors.
