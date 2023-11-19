@@ -1,6 +1,5 @@
-## Features
-
-InkSync is a real-time whiteboard which provides the following key features:
+## About
+InkSync is a collaborative digital whiteboard designed to facilitate brainstorming, idea sharing, and seamless collaboration among individuals, whether they are in the same room or working remotely. 
 
 ### Drawing:
 - Use a pencil with three different colors.
